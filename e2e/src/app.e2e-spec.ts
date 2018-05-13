@@ -1,10 +1,10 @@
-import { AngularCliHerokuPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('angular-cli-heroku App', () => {
-  let page: AngularCliHerokuPage;
+describe('workspace-project App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new AngularCliHerokuPage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
