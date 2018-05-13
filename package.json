@@ -9,7 +9,7 @@
     "start": "node server.js",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build"
   },
   "private": true,
   "dependencies": {
@@ -52,7 +52,6 @@
     "tslint": "~5.9.1"
   },
   "engines": {
-    "node": "8.10.0",
-    "npm": "6.0.1"
+    "node": "8.10.0"
   }
 }
