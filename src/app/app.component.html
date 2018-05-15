@@ -9,7 +9,7 @@
 <div class="container-fluid">
 
 <div class="row">
-  <div class="col-sm-8" >
+  <div class="col-sm-7" >
     <div class="panel panel-primary">
     <div class="panel-heading">Product List</div>
     <div class="panel-body fixed-panel">
@@ -25,58 +25,22 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Leaf Rake</td>
-              <td>cat1-0001</td>
-              <td>$10.01</td>
-              <td>5</td>
+            <tr *ngFor="let product of productlist"> 
+              <td>{{product.productname}}</td>
+              <td>{{product.code}}</td>
+              <td>{{product.price}}</td>
+              <td>{{product.rating}}</td>
               <td>
                 <a class="btn btn-primary">Add</a>
               </td>
             </tr>
-            <tr>
-                <td>Leaf Rake1</td>
-                <td>cat1-0001</td>
-                <td>$19.01</td>
-                <td>5</td>
-                <td>
-                  <a class="btn btn-primary">Add</a>
-                </td>
-              </tr>
-              <tr>
-                  <td>Leaf Rake1</td>
-                  <td>cat1-0001</td>
-                  <td>$19.01</td>
-                  <td>5</td>
-                  <td>
-                    <a class="btn btn-primary">Add</a>
-                  </td>
-                </tr>
-                <tr>
-                    <td>Leaf Rake1</td>
-                    <td>cat1-0001</td>
-                    <td>$19.01</td>
-                    <td>5</td>
-                    <td>
-                      <a class="btn btn-primary">Add</a>
-                    </td>
-                  </tr>
-                  <tr>
-                      <td>Leaf Rake1</td>
-                      <td>cat1-0001</td>
-                      <td>$19.01</td>
-                      <td>5</td>
-                      <td>
-                        <a class="btn btn-primary">Add</a>
-                      </td>
-                    </tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
 </div>
-  <iframe [src]="ordercartUrl" frameBorder="0"></iframe>
+  <iframe [src]="ordercartUrl" class="fixed-iframe" frameBorder="0"></iframe>
 </div>
 
 
