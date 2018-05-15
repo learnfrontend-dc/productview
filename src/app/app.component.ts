@@ -9,8 +9,8 @@ import { BrowserModule, DomSanitizer } from '@angular/platform-browser'
 })
 export class AppComponent {
   public modalRef: BsModalRef;
-  constructor(private modalService: BsModalService) {}
-  public ordercartUrl="https://ordercart-dc.herokuapp.com/";
+  constructor(private modalService: BsModalService, private sanitizer: DomSanitizer) {}
+  public ordercartUrl=this.sanitizer.bypassSecurityTrustResourceUrl("https://ordercart-dc.herokuapp.com/");
   public openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
   }
