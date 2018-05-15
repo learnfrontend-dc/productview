@@ -7,25 +7,7 @@
 </nav>
 
 <div class="container-fluid">
-<!--
-  <button type="button" class="btn btn-primary" tooltip="Tooltip.">
-  Button with tooltip
-  </button>
 
-  <button type="button" class="btn btn-info" (click)="openModal(template)">Create template modal</button>
-
-  <ng-template #template>
-      <div class="modal-header">
-          <h4 class="modal-title pull-left">Modal</h4>
-          <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-       <span aria-hidden="true">&times;</span>
-     </button>
-      </div>
-      <div class="modal-body">
-          This is a modal.
-      </div>
-  </ng-template>
--->
 <div class="row">
   <div class="col-sm-8" >
     <div class="panel panel-primary">
@@ -94,12 +76,7 @@
     </div>
   </div>
 </div>
-  <div class="col-sm-4" >
-      <div class="panel panel-primary">
-          <div class="panel-heading">Check Out</div>
-          <div class="panel-body fixed-panel">Panel Content</div>
-        </div>
-  </div>
+  <iframe [src]="ordercartUrl" frameBorder="0"></iframe>
 </div>
 
 
