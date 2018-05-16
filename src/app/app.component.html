@@ -28,10 +28,10 @@
             <tr *ngFor="let product of productlist"> 
               <td>{{product.productname}}</td>
               <td>{{product.code}}</td>
-              <td>{{product.price}}</td>
+              <td>{{product.price | currency: 'USD' :true: '1.2-2'}}</td>
               <td>{{product.rating}}</td>
               <td>
-                <a class="btn btn-primary">Add</a>
+                <a class="btn btn-primary" (click)="addToCart(product)">Add</a>
               </td>
             </tr>
           </tbody>
@@ -40,7 +40,7 @@
     </div>
   </div>
 </div>
-  <iframe [src]="ordercartUrl" class="fixed-iframe" frameBorder="0"></iframe>
+  <iframe [src]="ordercartUrl" id="ordercard" class="fixed-iframe" frameBorder="0" ></iframe>
 </div>
 
 
