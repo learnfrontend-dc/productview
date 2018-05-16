@@ -41,7 +41,7 @@ export class AppComponent {
   constructor(private modalService: BsModalService, private sanitizer: DomSanitizer) {
     
   }
-  public ordercartUrl=this.sanitizer.bypassSecurityTrustResourceUrl("http://orderlist.herokuapp.com/");
+  public ordercartUrl=this.sanitizer.bypassSecurityTrustResourceUrl("https://ordercart-dc.herokuapp.com/");
   public addToCart(product) {
     window.frames[0].postMessage(product, '*');
   }
