@@ -6,7 +6,7 @@
     "build": "ng build",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start": "node server.js",
+    "start": "ng serve",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
     "postinstall": "ng build"
@@ -20,6 +20,7 @@
     "@angular/compiler": "^6.0.0",
     "@angular/compiler-cli": "^6.0.0",
     "@angular/core": "^6.0.0",
+    "@angular/elements": "^6.0.2",
     "@angular/forms": "^6.0.0",
     "@angular/http": "^6.0.0",
     "@angular/platform-browser": "^6.0.0",
@@ -28,12 +29,14 @@
     "angular-http-server": "^1.4.5",
     "bootstrap": "3.3.7",
     "core-js": "^2.5.4",
+    "document-register-element": "^1.8.1",
     "express": "^4.16.3",
     "ngx-bootstrap": "^1.8.1",
     "path": "^0.12.7",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.1.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "phmf1": "0.0.3"
   },
   "devDependencies": {
     "typescript": "~2.7.2",
